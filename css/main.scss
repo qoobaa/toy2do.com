@@ -26,3 +26,31 @@ $container-large-desktop: (720px + $grid-gutter-width) !default;
 $container-lg: $container-large-desktop !default;
 
 @import "bootstrap";
+
+$footer-height: 50px;
+
+/* Sticky footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: $footer-height;
+    padding-top: $navbar-height;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    color: $navbar-inverse-color;
+    background-color: $navbar-inverse-bg;
+    padding: 15px;
+}
+
+.footer a {
+    color: $gray-light;
+    text-decoration: none;
+}
