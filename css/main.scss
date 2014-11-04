@@ -1,0 +1,28 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@charset "utf-8";
+
+$navbar-height: 100px;
+$navbar-padding-vertical: 22.5px;
+
+$grid-gutter-width: 30px;
+
+// Small screen / tablet
+$container-tablet: (720px + $grid-gutter-width);
+//** For `$screen-sm-min` and up.
+$container-sm: $container-tablet;
+
+// Medium screen / desktop
+$container-desktop: (720px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md: $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop: (720px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg: $container-large-desktop !default;
+
+@import "bootstrap";

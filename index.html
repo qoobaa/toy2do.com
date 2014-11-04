@@ -2,4 +2,43 @@
 layout: default
 ---
 
-<h1>toy2do.com</h1>
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="javascript:;">
+      <span class="text-hide">toy2do</span>
+      {% include svg/logo-white.svg %}
+    </a>
+
+    <div class="collapse navbar-collapse pull-right">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="javascript:;" class="text-center">
+            {% include svg/en.svg %}
+            <div>en</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;" class="text-center">
+            {% include svg/de.svg %}
+            <div>de</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;" class="text-center">
+            {% include svg/es.svg %}
+            <div>es</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="javascript:;" class="text-center">
+            {% include svg/pl.svg %}
+            <div>pl</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
