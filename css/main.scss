@@ -24,8 +24,8 @@
 @import "bootstrap/buttons";
 
 // Components
-/* @import "bootstrap/component-animations"; */
-/* @import "bootstrap/dropdowns"; */
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
 /* @import "bootstrap/button-groups"; */
 /* @import "bootstrap/input-groups"; */
 @import "bootstrap/navs";
@@ -79,7 +79,16 @@ body {
     padding: 15px;
 }
 
-.footer a {
-    color: $gray-light;
-    text-decoration: none;
+.language-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2.5px;
+}
+
+.navbar-brand {
+    padding: 20px 15px;
+}
+
+.navbar {
+    font-weight: 700;
 }
