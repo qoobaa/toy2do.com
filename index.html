@@ -3,49 +3,86 @@ layout: default
 locale: en
 ---
 
-<div class="container">
-  <a class="anchor" id="about"></a>
+<section class="about">
+  <div class="container">
+    <a class="anchor" id="about"></a>
 
-  <h2>About Me</h2>
+    <div class="row">
+      <div class="col-sm-8">
+        <p>
+          Hi there! I'm Magdalena, a happy young mum. I've also been working
+          as a teacher, supporting kids with various needs, including
+          visually impaired.<br>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <p>
-        Hi there! I'm Magdalena, a happy young mum. I've also been working
-        as a teacher, supporting kids with various needs, including
-        visually impaired.<br>
+          I understand how important it is to provide kids with materials
+          adapted to their age and needs, to stimulate their development in
+          a fun way.<br>
 
-        I understand how important it is to provide kids with materials
-        adapted to their age and needs, to stimulate their development in
-        a fun way.<br>
+          That inspired me to start making toys for babies. My
+          contrastive black/white/red toys help the little ones practise
+          their eyesight, and a variety of textures and sounds stimulate
+          their senses, giving them joy as well! The toys are also
+          suitable for blind and visually impaired children.<br>
 
-        That inspired me to start making toys for babies. My
-        contrastive black/white/red toys help the little ones practise
-        their eyesight, and a variety of textures and sounds stimulate
-        their senses, giving them joy as well! The toys are also
-        suitable for blind and visually impaired children.<br>
-
-        In my home section you'll find toys for bigger kids (adults).
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/me.jpg" width="100%" class="img-thumbnail">
+          In my home section you'll find toys for bigger kids (adults).
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="/img/me.jpg" width="100%" class="img-thumbnail">
+      </div>
     </div>
   </div>
-
-  <a class="anchor" id="orders"></a>
-
-  <h2>Orders</h2>
-
-  <p>
-    You can make an order <a href="mailto:magdalena@toy2do.com">via
-    email</a>. As I design the toys individually - any ideas are
-    welcome. Simply put your wishes into words and we can work it out!
-    Prices and time depend on the order. Check my online shop as well,
-    maybe you'll find there exactly what you need!
-  </p>
-
-  <br>
-
-  {% include wufoo.html %}
 </div>
+
+<section class="baby">
+  <div class="container">
+    <a class="anchor" id="baby"></a>
+
+    <div class="row">
+      {% for toy in site.data.baby_toys %}
+        <div class="col-sm-4">
+          <a href="javascript:;" data-toggle="modal" data-target="#{{toy.id}}">
+            <img src="/img/{{toy.id}}.jpg" width="100%" class="img-thumbnail">
+          </a>
+        </div>
+
+        <div class="modal fade" id="{{toy.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                  <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">{{toy.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="/img/{{toy.id}}.jpg" width="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="orders">
+  <div class="container">
+    <a class="anchor" id="orders"></a>
+
+    <h2>Orders</h2>
+
+    <p>
+      You can make an order <a href="mailto:magdalena@toy2do.com">via
+        email</a>. As I design the toys individually - any ideas are
+      welcome. Simply put your wishes into words and we can work it out!
+      Prices and time depend on the order. Check my online shop as well,
+      maybe you'll find there exactly what you need!
+    </p>
+
+    <br>
+
+    {% include wufoo.html %}
+  </div>
+</section>
