@@ -3,29 +3,58 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@charset "utf-8";
+@import "variables";
 
-$navbar-height: 100px;
-$navbar-padding-vertical: 22.5px;
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
-$grid-gutter-width: 30px;
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+/* @import "bootstrap/glyphicons"; */
 
-// Small screen / tablet
-$container-tablet: (720px + $grid-gutter-width);
-//** For `$screen-sm-min` and up.
-$container-sm: $container-tablet;
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+/* @import "bootstrap/code"; */
+@import "bootstrap/grid";
+/* @import "bootstrap/tables"; */
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
 
-// Medium screen / desktop
-$container-desktop: (720px + $grid-gutter-width) !default;
-//** For `$screen-md-min` and up.
-$container-md: $container-desktop !default;
+// Components
+/* @import "bootstrap/component-animations"; */
+/* @import "bootstrap/dropdowns"; */
+/* @import "bootstrap/button-groups"; */
+/* @import "bootstrap/input-groups"; */
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+/* @import "bootstrap/breadcrumbs"; */
+/* @import "bootstrap/pagination"; */
+/* @import "bootstrap/pager"; */
+/* @import "bootstrap/labels"; */
+/* @import "bootstrap/badges"; */
+/* @import "bootstrap/jumbotron"; */
+/* @import "bootstrap/thumbnails"; */
+/* @import "bootstrap/alerts"; */
+/* @import "bootstrap/progress-bars"; */
+/* @import "bootstrap/media"; */
+/* @import "bootstrap/list-group"; */
+/* @import "bootstrap/panels"; */
+/* @import "bootstrap/responsive-embed"; */
+/* @import "bootstrap/wells"; */
+/* @import "bootstrap/close"; */
 
-// Large screen / wide desktop
-$container-large-desktop: (720px + $grid-gutter-width) !default;
-//** For `$screen-lg-min` and up.
-$container-lg: $container-large-desktop !default;
+// Components w/ JavaScript
+/* @import "bootstrap/modals"; */
+/* @import "bootstrap/tooltip"; */
+/* @import "bootstrap/popovers"; */
+/* @import "bootstrap/carousel"; */
 
-@import "bootstrap";
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
 
 $footer-height: 50px;
 
