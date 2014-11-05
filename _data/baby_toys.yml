@@ -1,6 +1,12 @@
 - id: "mobile-1"
-  name: Mobile
+  name_en: Mobile
+  name_de: Mobile
+  name_pl: Karuzela
 - id: "toy-1"
-  name: Toy
+  name_en: Toy
+  name_de: Toy
+  name_pl: Zabawka
 - id: "toy-2"
-  name: Toy
+  name_en: Toy
+  name_de: Toy
+  name_pl: Zabawka

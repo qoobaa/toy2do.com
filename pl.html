@@ -3,6 +3,65 @@ layout: default
 locale: pl
 ---
 
-<div class="container">
-  <p class="text-muted">polski…</p>
-</div>
+<section class="about">
+  <div class="container">
+    <a class="anchor" id="about"></a>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <p>
+          Witam! Nazywam się Magdalena i jestem szczęśliwą młodą
+          matką. Jestem też nauczycielką, pracowałam z dzieciakami o
+          różnych potrzebach, także z niedowidzącymi i niewidomymi.
+        </p>
+
+        <p>
+          Rozumiem jak ważne jest zapewnienie dzieciom materiałów
+          dostosowanych do ich wieku i potrzeb, żeby pobudzić ich
+          rozwój poprzez zabawę.
+        </p>
+
+        <p>
+          To zainspirowało mnie do tworzenia zabawek dla
+          dzidziusiów. Moje kontrastujące czarno/biało/czerwone
+          zabawki pomagają maluszkom ćwiczyć wzrok, a rożnorodne
+          materiały i dźwięki stymulują ich zmysły, dając im zarazem
+          wiele radości! Zabawki te są też przeznaczone dla dzieci
+          niedowidzących i niewidomych.
+        </p>
+
+        <p>
+          W moim dziale domowym znajdziesz zabawki dla większych
+          dzieci (dorosłych).
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="/img/me.jpg" width="100%" class="img-thumbnail">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include baby.html %}
+
+<section class="orders">
+  <div class="container">
+    <a class="anchor" id="orders"></a>
+
+    <h2>Zamówienia</h2>
+
+    <p>
+      Zamówienie możesz
+      złożyć <a href="mailto:magdalena@toy2do.com">emailowo</a>. Ponieważ
+      moje projekty zabawek są indywidualne, wszelkie pomysły są mile
+      widziane. Po prostu przelej swoje marzenia na papier i coś z
+      tego stworzymy!  Ceny i czas zależą od zamówienia. Zajrzyj też
+      do mojego sklepiku online, może znajdziesz tam to, czego
+      potrzebujesz!
+    </p>
+
+    <br>
+
+    {% include {{page.locale}}/wufoo.html %}
+  </div>
+</section>
