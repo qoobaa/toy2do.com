@@ -36,7 +36,7 @@
         {% for locale in site.data.locales %}
         <li {% if page.locale == locale.code %} class="active" {% endif %}>
           <a href="{{locale.path}}" class="language hidden-xs">
-            <svg height="30" viewBox="0 0 40 40">
+            <svg height="20" viewBox="0 0 40 40">
               {% include svg/{{locale.code}}.svg %}
             </svg>
             <div class="text-center">{{locale.code}}</div>
