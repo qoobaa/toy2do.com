@@ -31,36 +31,22 @@ a:hover {
     display: none;
 }
 
-form {
+.wufoo {
     font-family: $font-family-sans-serif !important;
     font-size: 16px !important;
 
-    li {
-        padding: 0 !important;
-    }
-
     li.focused,
-
     li.error {
         background: none !important;
     }
 
-    #saveForm {
-        @extend .btn;
-        @extend .btn-primary;
-    }
-
-    #fo1li6 {
-        div {
-            padding: 0 !important;
-        }
-    }
-
-    #fo1li3 {
+    li {
         @extend .form-group;
+        padding: 0 !important;
         width: 100% !important;
 
         label {
+
             float: none;
         }
 
@@ -68,30 +54,15 @@ form {
             width: 100% !important;
         }
 
-        #Field3 {
+        textarea,
+        input {
             @extend .form-control;
             width: 100% !important;
             padding: 6px;
+        }
+
+        textarea {
             height: 180px;
-        }
-    }
-
-    #fo1li1 {
-        @extend .form-group;
-        width: 100% !important;
-
-        label {
-            float: none;
-        }
-
-        div {
-            width: 100% !important;
-        }
-
-        #Field1 {
-            @extend .form-control;
-            padding: 6px;
-            width: 100% !important;
         }
 
         .error {
@@ -106,6 +77,11 @@ form {
             overflow: hidden !important;
             margin: 0 !important;
             padding: 0 !important;
+        }
+
+        .submit {
+            @extend .btn;
+            @extend .btn-primary;
         }
     }
 }
