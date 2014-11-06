@@ -1,0 +1,36 @@
+<section class="home">
+  <div class="container">
+    <a class="anchor" id="home"></a>
+
+    <div class="row">
+      {% for toy in site.data.home_toys %}
+        <div class="col-sm-4">
+          <a href="javascript:;" data-toggle="modal" data-target="#{{toy.id}}">
+            <img src="/img/{{toy.id}}.jpg" width="100%" class="img-thumbnail" alt="{% include translate.html translations=toy.name %}">
+          </a>
+        </div>
+
+        <div class="modal fade" id="{{toy.id}}" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span>
+                  <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">
+                  {% include translate.html translations=toy.name %}
+                </h4>
+              </div>
+              <div class="modal-body">
+                <a href="javascript:;" data-dismiss="modal">
+                  <img src="/img/{{toy.id}}.jpg" width="100%" alt="{% include translate.html translations=toy.name %}">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

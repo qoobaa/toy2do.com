@@ -81,6 +81,7 @@ body {
 
 
 .navbar-brand {
+    position: absolute;
     padding: 20px 15px;
 }
 
@@ -120,6 +121,11 @@ section {
 }
 
 .baby {
+    background-color: $navbar-inverse-bg;
+    color: $navbar-inverse-color;
+}
+
+.home {
     background-color: $navbar-inverse-bg;
     color: $navbar-inverse-color;
 }
