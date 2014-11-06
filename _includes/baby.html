@@ -3,10 +3,69 @@
     <a class="anchor" id="baby"></a>
 
     <div class="row">
+      <div class="col-sm-3 col-xs-6 text-center">
+        <h4 class="feature">
+          <svg height="40" viewBox="0 0 40 40">
+            {% include svg/rattle.svg %}
+          </svg>
+          {% case page.locale %}
+          {% when "en" %}
+            I rattle
+          {% when "pl" %}
+            grzechocą
+          {% endcase %}
+        </h4>
+      </div>
+      <div class="col-sm-3 col-xs-6 text-center">
+        <h4 class="feature">
+          <svg height="40" viewBox="0 0 40 40">
+            {% include svg/rustle.svg %}
+          </svg>
+          {% case page.locale %}
+          {% when "en" %}
+            I rustle
+          {% when "pl" %}
+            szeleszczą
+          {% endcase %}
+        </h4>
+      </div>
+      <div class="col-sm-3 col-xs-6 text-center">
+        <h4 class="feature">
+          <svg height="40" viewBox="0 0 40 40">
+            {% include svg/jingle.svg %}
+          </svg>
+          {% case page.locale %}
+          {% when "en" %}
+            I jingle
+          {% when "pl" %}
+            dzwonią
+          {% endcase %}
+        </h4>
+      </div>
+      <div class="col-sm-3 col-xs-6 text-center">
+        <h4 class="feature">
+          <svg height="40" viewBox="0 0 40 40">
+            {% include svg/smell.svg %}
+          </svg>
+          {% case page.locale %}
+          {% when "en" %}
+            I smell
+          {% when "pl" %}
+            pachną
+          {% endcase %}
+        </h4>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
       {% for toy in site.data.baby_toys %}
         <div class="col-sm-4">
           <a href="javascript:;" data-toggle="modal" data-target="#{{toy.id}}">
-            <img src="/img/{{toy.id}}.jpg" width="100%" class="img-thumbnail">
+            <img src="/img/{{toy.id}}.jpg" width="100%" class="img-thumbnail" alt="{% include translate.html translations=toy.name %}">
           </a>
         </div>
 
