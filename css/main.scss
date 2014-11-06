@@ -112,6 +112,18 @@ section {
     padding: 50px 0;
 }
 
+.features {
+    color: $navbar-inverse-color;
+    background-color: $navbar-inverse-bg;
+}
+
+.features-item {
+    svg {
+        vertical-align: middle;
+        margin-bottom: 3px;
+    }
+}
+
 .baby {
     background-color: $navbar-inverse-bg;
 }

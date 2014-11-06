@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="0" d="m-6.299678 23.18066a10.542319 10.606602 0 1 1 -21.08464 0 10.542319 10.606602 0 1 1 21.08464 0" color="#000" fill="#fff"/><path id="1" d="m-10 21.5a7.5 7.5 0 1 1 -15 0 7.5 7.5 0 1 1 15 0" color="#000" fill="#f00"/></defs><g transform="translate(-11.208-10.508)"><path transform="matrix(-.88889 0 0-.88889 60.1 62.952)" d="m55 36.5a22.5 22.5 0 1 1 -45 0 22.5 22.5 0 1 1 45 0" fill="#00f" color="#000"/><use transform="matrix(.71239 0 0 .71177 35.35 6.092)" xlink:href="#0"/><use transform="matrix(-.71239 0 0 .71177 27.1 6.092)" xlink:href="#0"/><g transform="matrix(-1.14286 0 0-1.14883-2.891 57.46)"><use transform="matrix(.62334 0 0-.61956-26.24 30.897)" xlink:href="#0"/><path d="m-10 21.5a7.5 7.5 0 1 1 -15 0 7.5 7.5 0 1 1 15 0" transform="matrix(.57143 0 0-.57143-26.74 28.821)" fill="#f00" color="#000"/><use transform="matrix(-.57143 0 0-.57143-32.96 42.639)" xlink:href="#1"/><use transform="matrix(.57143 0 0-.57143-26.741 42.639)" xlink:href="#1"/><use transform="matrix(.62334 0 0-.61956-12.462 30.897)" xlink:href="#0"/><use transform="matrix(.57143 0 0-.57143-12.961 28.821)" xlink:href="#1"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path id="0" d="m-6.299678 23.18066a10.542319 10.606602 0 1 1 -21.08464 0 10.542319 10.606602 0 1 1 21.08464 0" color="#000" fill="#fff"/>
+  <path id="1" d="m-10 21.5a7.5 7.5 0 1 1 -15 0 7.5 7.5 0 1 1 15 0" color="#000" fill="#f00"/>
+ </defs>
+ <g transform="translate(-11.208-10.508)">
+  <path transform="matrix(-.88889 0 0-.88889 60.1 62.952)" d="m55 36.5a22.5 22.5 0 1 1 -45 0 22.5 22.5 0 1 1 45 0" fill="#00f" color="#000"/>
+  <use transform="matrix(.71239 0 0 .71177 35.35 6.092)" xlink:href="#0"/>
+  <use transform="matrix(-.71239 0 0 .71177 27.1 6.092)" xlink:href="#0"/>
+  <g transform="matrix(-1.14286 0 0-1.14883-2.891 57.46)">
+   <use transform="matrix(.62334 0 0-.61956-26.24 30.897)" xlink:href="#0"/>
+   <use transform="matrix(.57143 0 0-.57143-26.74 28.821)" xlink:href="#1"/>
+   <use transform="matrix(-.57143 0 0-.57143-32.96 42.639)" xlink:href="#1"/>
+   <use transform="matrix(.57143 0 0-.57143-26.741 42.639)" xlink:href="#1"/>
+   <use transform="matrix(.62334 0 0-.61956-12.462 30.897)" xlink:href="#0"/>
+   <use transform="matrix(.57143 0 0-.57143-12.961 28.821)" xlink:href="#1"/>
+  </g>
+ </g>
+</svg>

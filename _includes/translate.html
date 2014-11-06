@@ -1,0 +1,6 @@
+{% for translation in include.translations %}
+  {% assign locale = {{translation | first}} %}
+  {% if locale == page.locale %}
+    {{translation | last}}
+  {% endif %}
+{% endfor %}

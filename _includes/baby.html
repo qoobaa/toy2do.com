@@ -18,10 +18,12 @@
                   <span aria-hidden="true">&times;</span>
                   <span class="sr-only">Close</span>
                 </button>
-                <h4 class="modal-title">{{toy.name}}</h4>
+                <h4 class="modal-title">{% include translate.html translations=toy.name %}</h4>
               </div>
               <div class="modal-body">
-                <img src="/img/{{toy.id}}.jpg" width="100%">
+                <a href="javascript:;" data-dismiss="modal">
+                  <img src="/img/{{toy.id}}.jpg" width="100%">
+                </a>
               </div>
             </div>
           </div>
