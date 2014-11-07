@@ -3,6 +3,61 @@ layout: default
 locale: de
 ---
 
-<div class="container">
-  <p class="text-muted">Deutsch…</p>
-</div>
+<section class="about">
+  <div class="container">
+    <a class="anchor" id="about"></a>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <p>
+          Hallo, ich bin Magdalena, eine junge und glückliche
+          Mama. Ich bin Lehrerin und habe mit Kindern mit
+          verschiedensten Bedürfnissen gearbeitet, einschließlich
+          sehbehinderten und blinden Kindern.
+        </p>
+
+        <p>
+          Daher weiß ich, wie wichtig es ist, Kindern alters- und
+          bedürfnisgerechte Spielsachen zu bieten, um ihre Entwicklung
+          durch ihr Spiel zu fördern.
+        </p>
+
+        <p>
+          Meine Erfahrungen haben mich inspiriert, Spielsachen für
+          Babys zu entwickeln. Meine kontrastreichen schwarz-weiß-rote
+          Spielzeuge helfen den Kleinsten, ihr Sehvermögen zu
+          trainieren. Die unterschiedlichen Stoffe und Geräusche
+          stimulieren ihre Sinne und bereiten den Kindern gleichzeitig
+          viel Freude. Diese Spielsachen sind ebenfalls gut für
+          sehbehinderte bzw. schwerhörige Kindern geeignet.
+        </p>
+
+        <p>
+          In der Abteilung „Für Zuhause“ finden Sie Spielzeuge auch
+          für etwas größere Kindern (Erwachsene).
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <img src="/img/me.jpg" width="100%" class="img-thumbnail">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include baby.html %}
+
+{% include home.html %}
+
+<section class="orders">
+  <div class="container">
+    <a class="anchor" id="orders"></a>
+
+    <p>
+      …
+    </p>
+
+    <br>
+
+    {% include {{page.locale}}/wufoo.html %}
+  </div>
+</section>

@@ -2,60 +2,7 @@
   <div class="container">
     <a class="anchor" id="baby"></a>
 
-    <div class="row">
-      <div class="col-sm-3 col-xs-6 text-center">
-        <h4 class="feature">
-          <svg height="40" viewBox="0 0 40 40">
-            {% include svg/rattle.svg %}
-          </svg>
-          {% case page.locale %}
-          {% when "en" %}
-            I rattle
-          {% when "pl" %}
-            grzechocę
-          {% endcase %}
-        </h4>
-      </div>
-      <div class="col-sm-3 col-xs-6 text-center">
-        <h4 class="feature">
-          <svg height="40" viewBox="0 0 40 40">
-            {% include svg/rustle.svg %}
-          </svg>
-          {% case page.locale %}
-          {% when "en" %}
-            I rustle
-          {% when "pl" %}
-            szeleszczę
-          {% endcase %}
-        </h4>
-      </div>
-      <div class="col-sm-3 col-xs-6 text-center">
-        <h4 class="feature">
-          <svg height="40" viewBox="0 0 40 40">
-            {% include svg/jingle.svg %}
-          </svg>
-          {% case page.locale %}
-          {% when "en" %}
-            I jingle
-          {% when "pl" %}
-            dzwonię
-          {% endcase %}
-        </h4>
-      </div>
-      <div class="col-sm-3 col-xs-6 text-center">
-        <h4 class="feature">
-          <svg height="40" viewBox="0 0 40 40">
-            {% include svg/smell.svg %}
-          </svg>
-          {% case page.locale %}
-          {% when "en" %}
-            I smell
-          {% when "pl" %}
-            pachnę
-          {% endcase %}
-        </h4>
-      </div>
-    </div>
+    {% include {{page.locale}}/features.html %}
 
     <br>
     <br>
