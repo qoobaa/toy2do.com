@@ -1,15 +1,15 @@
 - id: "xmas-tree-1"
   name:
-    en: Christmas Tree
-    de: Christmas Tree
-    pl: Choinka
+    en: X-mas trees
+    de: Christbaum
+    pl: choinki
 - id: "xmas-tree-2"
   name:
-    en: Christmas Tree
-    de: Christmas Tree
-    pl: Choinka
+    en: angel & tree
+    de: Engel & Baum
+    pl: aniołek & choinka
 - id: "circle-1"
   name:
-    en: Circle
-    de: Circle
-    pl: Kółko
+    en: wreath
+    de: Kranz
+    pl: wianek
