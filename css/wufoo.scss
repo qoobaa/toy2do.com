@@ -16,6 +16,8 @@
 @import "bootstrap/forms";
 @import "bootstrap/buttons";
 
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic&subset=latin,latin-ext);
+
 html.embed,
 body {
     background-color: transparent;
@@ -32,7 +34,7 @@ a:hover {
 }
 
 .wufoo {
-    font-family: $font-family-sans-serif !important;
+    font-family: Lato, sans-serif !important;
     font-size: 16px !important;
 
     li.focused,
