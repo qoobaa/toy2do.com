@@ -1,15 +1,15 @@
 - id: "mobile-1"
   name:
-    en: Mobile
+    en: mobile
     de: Mobile
-    pl: Karuzela
+    pl: karuzela
 - id: "toy-1"
   name:
-    en: Toy
-    de: Toy
-    pl: Zabawka
+    en: hanging toys
+    de: Hängende Spielzeuge
+    pl: wiszące zabawki
 - id: "toy-2"
   name:
-    en: Toy
-    de: Toy
-    pl: Zabawka
+    en: hanging toys
+    de: Hängende Spielzeuge
+    pl: wiszące zabawki
