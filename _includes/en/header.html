@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
 
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <a class="navbar-brand" href="{{page.url | replace : "index.html", ""}}">
         <span class="text-hide">toy2do</span>
         <svg height="65" viewBox="0 0 468.15 140.19" class="logo">
           {% include svg/logo-white.svg %}

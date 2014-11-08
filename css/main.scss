@@ -110,11 +110,19 @@ section {
     padding: 50px 0;
 }
 
-.feature {
+.feature,
+.baby-header,
+.home-header {
     svg {
         vertical-align: middle;
         margin-bottom: 3px;
+        margin-right: 10px;
     }
+}
+
+.features {
+    background-color: $navbar-inverse-bg;
+    color: $navbar-inverse-color;
 }
 
 .baby {
