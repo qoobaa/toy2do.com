@@ -98,13 +98,10 @@ body {
 
 @media (min-width: $grid-float-breakpoint) {
     .navbar-nav > li > a {
-        padding-top: 57px;
-        padding-bottom: 21px;
+        padding: 57px 10px 21px 10px;
 
         &.language {
             margin-top: -26px;
-            padding-left: 10px;
-            padding-right: 10px;
         }
     }
 }
