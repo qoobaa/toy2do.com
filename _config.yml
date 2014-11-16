@@ -5,3 +5,4 @@ baseurl: ""
 url: "https://toy2do.com" # the base hostname & protocol for your site
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock]
+maintenance: true

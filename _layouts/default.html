@@ -4,18 +4,21 @@
   {% include head.html %}
 
   <body>
+    {% if site.maintenance == false %}
+      {% include {{page.locale}}/header.html %}
 
-    {% include {{page.locale}}/header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
 
-    {% include footer.html %}
+      {% include footer.html %}
 
-    {% include foot.html %}
+      {% include foot.html %}
+    {% else %}
+      {% include maintenance.html %}
+    {% endif %}
   </body>
 
 </html>
